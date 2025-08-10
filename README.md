@@ -171,7 +171,12 @@ Quick project summary:
 
 ---
 
-## Unfixed Bugs
+## Bugs
+
+### Data Cleaning
+
+- During the correlation and PPS study, after I ran the `CalculateCorrAndPPS(df)` function, I got a warning that denotes - "`FutureWarning: is_categorical_dtype is deprecated and will be removed in a future version. Use isinstance(dtype, CategoricalDtype) instead`".
+- After a brief online research and discussions with my peers, I got rid of the warning by adding `_is_categorical_dtype(series)` function before running the `CalculateCorrAndPPS(df)` function.
 
 ## Deployment
 
