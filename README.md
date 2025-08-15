@@ -117,6 +117,9 @@ For a more in-depth understanding of each phase and how to implement them, pleas
 
 As a Data Practitioner working with Code Institute, I was approached by a leading healthcare provider organization specializing in oncology to deliver actionable insights and predictive solutions. The client aims to improve diagnostic accuracy, optimize treatment prioritization, and enhance patient care outcomes by leveraging historical diagnostic data from breast cancer screenings.
 
+When defining the ML business case, it was agreed that the performance metric is recall on malignant (0) since the client needs to detect a malignant case.
+The client doesn't want to miss a malignant case, even if that comes with a cost where you misidentify a benign tumour, and state it is malignant. For this client, this is not as bad as misidentifying a malignant tumour as benign.
+
 1. The client is interested in understanding the key diagnostic features most strongly correlated with malignant tumors so that oncologists can focus on the most relevant indicators during patient evaluations.
 2. The client is interested in determining whether a newly detected tumor is malignant or benign. If malignant, the client is also interested in identifying the severity group (cluster) based on historical patient patterns. Using these insights, the client expects recommendations on the most critical diagnostic factors to monitor and strategies to improve early detection and intervention for high-risk cases.
 
@@ -243,8 +246,7 @@ By forking the GitHub Repository you will be able to make a copy of the original
 
 ## Credits
 
-* In this section, you need to reference where you got your content, media and extra help from. It is common practice to use code from other repositories and tutorials, however, it is important to be very specific about these sources to avoid plagiarism.
-* You can break the credits section up into Content and Media, depending on what you have included in your project.
+- Got the idea for the best model_n_estimators for AdaBoostClassifier in the Predict Diagnosis notebook from [StackOverflow](https://stackoverflow.com/questions/47216224/selecting-n-estimators-based-on-dataset-size-for-adaboostclassifier)
 
 ### Content
 
