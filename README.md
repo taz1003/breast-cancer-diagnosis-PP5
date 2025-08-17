@@ -181,16 +181,22 @@ Quick project summary:
 - During the correlation and PPS study, after I ran the `CalculateCorrAndPPS(df)` function, I got a warning that denotes - "`FutureWarning: is_categorical_dtype is deprecated and will be removed in a future version. Use isinstance(dtype, CategoricalDtype) instead`".
 - After a brief online research and discussions with my peers, I got rid of the warning by adding `_is_categorical_dtype(series)` function before running the `CalculateCorrAndPPS(df)` function.
 
-### Cluster Notebook
+### Cluster Notebook (1)
 
 - During the process of finding the optimized values of the clusters using Elbow Method and Silhoutte Score, I got font-waarning - `findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial, Liberation Sans, Bitstream Vera Sans, sans-serif findfont: Font family ['sans-serif'] not found. Falling back to DejaVu Sans.`
 - Fixed the font-issue warning by specifying the fonts taken from [StackOverflow](https://stackoverflow.com/questions/42097053/matplotlib-cannot-find-basic-fonts).
 
-### Cluster Notebook
+### Cluster Notebook (2)
 
 - During the assessment of the most important features, that define a cluster, I was getting an error - `The 'Pipeline' has no attribute 'transform'`.
 - The issue was because the pipeline `PipelineClf2ExplainClusters` ends with a classifier `GradientBoostingClassifier` and Scikit-learn’s Pipeline.transform() only works if all final steps have transform() methods.
 - With the help of [StackOverflow](https://stackoverflow.com/questions/57043168/attribute-error-pipeline-object-has-not-attribute-transform) and [Scikit-learn](https://scikit-learn.org/stable/modules/feature_selection.html), fixed the issue by adding the features after scaling and feature selection, but before the classifier and fitting them into a variable.
+
+### Cluster Notebook (3)
+
+- During the cluster analysis based on their profiles, I ran into an error that said `AttributeError: 'DataFrame' object has no attribute 'append'`.
+- This happended because `DataFrame.append()`, which was used in the `DescriptionAllClusters()` function, was deprecated in the previous Pandas versions than the one i am using.
+- Fixed it by using the modern replacement `pd.concat` to concatenate `DescriptionAllClusters`, `ClusterDescription`.
 
 ## Deployment
 
