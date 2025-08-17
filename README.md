@@ -186,6 +186,12 @@ Quick project summary:
 - During the process of finding the optimized values of the clusters using Elbow Method and Silhoutte Score, I got font-waarning - `findfont: Generic family 'sans-serif' not found because none of the following families were found: Arial, Liberation Sans, Bitstream Vera Sans, sans-serif findfont: Font family ['sans-serif'] not found. Falling back to DejaVu Sans.`
 - Fixed the font-issue warning by specifying the fonts taken from [StackOverflow](https://stackoverflow.com/questions/42097053/matplotlib-cannot-find-basic-fonts).
 
+### Cluster Notebook
+
+- During the assessment of the most important features, that define a cluster, I was getting an error - `The 'Pipeline' has no attribute 'transform'`.
+- The issue was because the pipeline `PipelineClf2ExplainClusters` ends with a classifier `GradientBoostingClassifier` and Scikit-learn’s Pipeline.transform() only works if all final steps have transform() methods.
+- With the help of [StackOverflow](https://stackoverflow.com/questions/57043168/attribute-error-pipeline-object-has-not-attribute-transform) and [Scikit-learn](https://scikit-learn.org/stable/modules/feature_selection.html), fixed the issue by adding the features after scaling and feature selection, but before the classifier and fitting them into a variable.
+
 ## Deployment
 
 The master branch of this repository has been used for the deployed version of this application.
