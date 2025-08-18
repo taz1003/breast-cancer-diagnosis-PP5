@@ -117,7 +117,7 @@ For a more in-depth understanding of each phase and how to implement them, pleas
 
 As a Data Practitioner working with Code Institute, I was approached by a leading healthcare provider organization specializing in oncology to deliver actionable insights and predictive solutions. The client aims to improve diagnostic accuracy, optimize treatment prioritization, and enhance patient care outcomes by leveraging historical diagnostic data from breast cancer screenings.
 
-When defining the ML business case, it was agreed that the performance metric is recall on malignant (0) since the client needs to detect a malignant case.
+When defining the ML business case, it was agreed that the performance metric is  at least 90% Recall for Malignant and 90% Precision for Benign cases, since the client needs to detect a malignant case.
 The client doesn't want to miss a malignant case, even if that comes with a cost where you misidentify a benign tumour, and state it is malignant. For this client, this is not as bad as misidentifying a malignant tumour as benign.
 
 1. The client is interested in understanding the key diagnostic features most strongly correlated with malignant tumors so that oncologists can focus on the most relevant indicators during patient evaluations.

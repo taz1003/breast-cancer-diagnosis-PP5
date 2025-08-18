@@ -12,7 +12,7 @@ def page_summary_body():
     """Project Dataset"""
     st.info(
         f"**Project Dataset & Jargons**\n"
-        f" * The dataset is sourced from **[Kaggle](https://www.kaggle.com/datasets/uciml/breast-cancer-wisconsin-data)**. "
+        f" * The dataset is sourced from **[Kaggle](https://www.kaggle.com/datasets/yasserh/breast-cancer-dataset)**. "
         f" This dataset contains 569 patient records (rows) with 32"
         f" features (columns) representing tumor characteristics extracted"
         f" from digitized breast mass images.\n"

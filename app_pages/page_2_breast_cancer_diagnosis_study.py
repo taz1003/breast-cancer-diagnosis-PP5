@@ -40,7 +40,7 @@ def page_breast_cancer_diagnosis_body():
 
     # Text based on "02 - Cancer Diagnosis Study" notebook - "Conclusions and Next steps" section
     st.write(
-        f"The correlation indications and plots below interpretation converge -\n"
+        f"The correlation indications and plots cover the interpretations below -\n"
         f"* Higher worst area value might point to a Malignant diagnosis.\n"
         f"* Mean of the concave points if >0.05 might point to a Malignant diagnosis.\n"
         f"* Concave worst area value if >0.14 might point to a Malignant diagnosis.\n"
