@@ -140,19 +140,19 @@ As a data practitioner I will -
 2. I want to identify the cluster profile of a new patient case to recommend potential diagnostic focus areas and support earlier, more accurate detection.
 3. Cluster patients into risk groups for personalized treatment plans.
 
-## Hypothesis
+## Hypothesis and how to validate?
 
 ### Hypothesis One
 
-***"Malignant tumors have higher worst area value, mean perimeter, radius and concavity."***
+***"Tumors with a larger worst area and greater mean perimeter (>85) are more likely to be Malignant."***
 
 - A Correlation study (Pearson/Spearman + Multivariate analysis)  can help in this investigation.
 
 ### Hypothesis Two
 
-***"X and Y are strong predictors of malignancy."***
+***"Tumors with higher concavity_mean and concavity_worst values are more likely to be Malignant."***
 
-- Feature importance from ML models.
+- A correlation study (Pearson/Spearman + Multivariate analysis) can help in investigating if this is true.
 
 ## ML Business Case
 
