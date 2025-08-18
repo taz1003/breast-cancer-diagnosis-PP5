@@ -1,14 +1,11 @@
-# you should list here the libraries you will use in the project
 numpy
 pandas
 matplotlib
 seaborn
-ydata-profiling
 plotly
 ppscore
 streamlit
 feature-engine
 imbalanced-learn
 scikit-learn
-xgboost
 yellowbrick
