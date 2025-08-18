@@ -1,7 +1,6 @@
 # The code below was inspired by the Churnometer Project from Code Institute 
 # with some adjustments
 
-from turtle import st
 import streamlit as st
 
 
